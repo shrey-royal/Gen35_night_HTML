@@ -6,12 +6,27 @@
     <title>Form</title>
 </head>
 <body>
-    <h1 align="center">Login Form</h1>
-    <form align="center">
-        Name: <input type="text" name="naam">
+    <h1>Login Form</h1>
+    <form>
+        Name: <input type="text" name="naam" placeholder="Enter Your Name">
         <br><br>
-        Email: <input type="email" name="email">
+        Email: <input type="email" name="email" placeholder="Enter Your Email">
         <br><br>
+        <dl>
+            <dt>Select Hobby: </dt>
+            <dd>
+                <input type="checkbox" name="hobby" value="Sleeping">&nbsp;Sleeping <br>
+                <input type="checkbox" name="hobby" value="Eating">&nbsp;Eating <br>
+                <input type="checkbox" name="hobby" value="Coding">&nbsp;Coding <br>
+                <input type="checkbox" name="hobby" value="travelling">&nbsp;Travelling <br>
+                <input type="checkbox" name="hobby" value="Nritya">&nbsp;Nritya
+            </dd>
+        </dl>
+        <br><br>
+        Mobile Number: <input type="number" name="number" placeholder="Enter your number">
+        <br><br>
+        <input type="range" name="ratings" max="100" min="0" value="80">
+        <br><br><br>
         <input type="submit">
     </form>
 </body>
