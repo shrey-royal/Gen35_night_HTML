@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame Tag</title>
+</head>
+<!-- <frameset cols="50%,50%">
+    <frame name="top" src="Audio.html"/>
+    <frame name="bottom" src="Video.html"/>
+</frameset> -->
+
+<frameset rows="10%, 80%, 10%">
+    <frame src="navbar.html">
+    <frame src="home.html">
+    <frame src="footer.html">
+</frameset>
+<noframes>
+    <body>
+        <p>Your browser does not support frames.</p>
+    </body>
+</noframes>
+</html>
+
+<!-- 
+Frame tag:
+> frame tag is used to create a frame in html.
+
+attributes:
+1. src: it is used to set the source of the frame.
+2. frameborder: it is used to set the border of the frame. (0 or 1)
+3. scrolling: it is used to set the scrolling of the frame. (yes or no)
+4. noresize: it is used to set the resize of the frame. (noresize)
+5. name: it is used to set the name of the frame.
+6. marginwidth: it is used to set the margin width of the frame.
+7. marginheight: it is used to set the margin height of the frame.
+8. align: it is used to set the alignment of the frame. (left, right, top, bottom)
+9. height: it is used to set the height of the frame.
+10. width: it is used to set the width of the frame.
+
+frametag is now deprecated in html5.
+ -->
