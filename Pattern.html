@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+</head>
+<body align="center">
+    <h1>Form Validation using Pattern Attribute</h1>
+    <form>
+        <label for="name">Name: </label>
+        <!-- <input type="text" name="name" pattern="kartik"> -->
+        <!-- <input type="text" name="name" pattern="[A-Z]{5}" title="1. The Input Must be of 5 Block Letters"> -->
+        <!-- <input type="text" name="name" pattern="[a-z]{5,6}" title="1. the input must be of 5 to 6 characters"> -->
+        <!-- <input type="text" name="name" pattern="[A-Za-z]{1,}" title="This is Title"> -->
+        <!-- <input type="number" name="name" pattern="[0-9]" title="This is Title"> -->
+        <!-- <input type="text" name="name" pattern="[b-f | a-b]{1,}" title="This is Title"> -->
+        <!-- <input type="text" name="name" pattern="[b-f | w-z]{1,}" title="This is Title"> -->
+        <!-- <input type="text" name="name" pattern="\U+1F90F" title="This is Title"> -->
+        <!-- <input type="text" name="name" pattern="\d{10}" title="This is Title"> -->
+        <!-- <input type="text" name="name" pattern="\w{1,}" title="This is Title"> -->
+        <!-- <input type="text" name="name" pattern="\w{1,}\s\w{1,}" title="This is Title"> -->
+        <!-- <input type="text" name="name" pattern="\bHTML\b{1,}" title="This is Title"> -->
+        <input type="text" name="name" pattern="[0-9]{10}" title="This is Title">
+        <input type="submit">
+
+    </form>
+</body>
+</html>
+
+<!--
+Pattern Attribute: The pattern attribute specifies a regular expression that the <input> element's value is checked against on form submission.
+
+Regular Expression:
+
+A regular expression is a sequence of characters that forms a search pattern.
+The search pattern can be used for text search and text replace operations.
+
+Regular Expression Modifiers
+Modifiers can be used to perform case-insensitive more global searches:
+
+Modifier	Description	 (not supported by pattern attribute in HTML5)
+i	Perform case-insensitive matching	
+g	Perform a global match (find all matches rather than stopping after the first match)	
+m	Perform multiline matching	
+
+Regular Expression Patterns
+Brackets are used to find a range of characters:
+
+Expression	Description	
+[abc]	Find any of the characters between the brackets	
+[0-9]	Find any of the digits between the brackets	
+(x|y)	Find any of the alternatives separated with |	
+
+Metacharacters are characters with a special meaning:
+
+Metacharacter	Description	
+\d	Find a digit	
+\s	Find a whitespace character	
+\b	Find a match at the beginning of a word like this: \bWORD, or at the end of a word like this: WORD\b	
+\uxxxx	Find the Unicode character specified by the hexadecimal number xxxx	
+
+Quantifiers define quantities:
+
+Quantifier	Description	
+n+	Matches any string that contains at least one n
+n*	Matches any string that contains zero or more occurrences of n
+n?	Matches any string that contains zero or one occurrences of n
+
+GMI attribute is not supported by pattern attribute in HTML5 we have to use it in javascript
+
+
+-->
